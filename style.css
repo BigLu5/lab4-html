@@ -3,7 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f7f7f2;
-  }
+}
 
 header {
     border: 2px solid black;
@@ -17,27 +17,43 @@ main h3 {
     font-weight: bold;
 }
 
-header li {
+header li a {
     display: inline;
+    text-decoration: none; 
+    color: #e4572e; 
 }
 
 nav ul {
     padding-left: 0;
     text-align: center;
+}
+
+header ul li {
+    display: inline;
   }
+
+
+nav ul li a {
+    color: #e4572e; 
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    color: #80492d; 
+}
 
 .phones {
     display: inline-block; 
     margin: 10px; 
-  }
+}
   
   .phones img {
     width: 300px; 
     height: 200px; 
     margin: 10px; 
-  }
+}
   
   footer {
     border: 2px solid black;
     text-align: center;
-  }
+}
