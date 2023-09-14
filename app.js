@@ -15,8 +15,6 @@ function displayUserPhone(){
     document.write(message);
     }
 
-// page will display the value the user enters in the format "I love Red Magic"
-
 function displayGreeting(){
   const currentTime = new Date().getHours();
   if (currentTime < 12) {
@@ -27,3 +25,29 @@ function displayGreeting(){
     document.write(" Good evening");
   }
 }
+
+function askTime() {
+    let isValid = false;
+    let message;
+
+    while (!isValid) {
+        let time = prompt("What hour is it? (0-23)");
+
+        // Check if the input is a number between 0 and 23
+        if (!isNaN(time) && time >= 0 && time <= 23) {
+            isValid = true; // Input is valid, exit the loop
+            if (time <= 11) {
+                message = "Good morning";
+            } else if (time <= 17) {
+                message = "Good afternoon";
+            } else {
+                message = "Good evening";
+            }
+        } else {
+            alert("Please enter a valid hour between 0 and 23.");
+        }
+    }
+
+    document.write(message);
+}
+
