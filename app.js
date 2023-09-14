@@ -2,9 +2,9 @@ let userPhone = prompt("What phone do you use?");
 
 function getUserPhone(){
     if (userPhone == "Red Magic" || userPhone == "red magic") {
-    alert("Snap!");
+    alert("Then this is the page for you");
     } else {
-    alert("I'm sure it works for you");
+    alert("Thinking about a change?");
     }
 }
 
@@ -20,7 +20,7 @@ function askTime() {
     let message;
 
     while (!isValid) {
-        let time = prompt("What hour is it? (0-23)");
+        let time = prompt("What time is it? (0-23)");
 
         // Check if the input is a number between 0 and 23
         if (!isNaN(time) && time >= 0 && time <= 23) {
