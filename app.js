@@ -1,8 +1,13 @@
+
+function phoneType() {
 let userPhone = prompt("What phone do you use?");
+document.write("I love" + userPhone)
+}
 
+function displayUserPhone(){
 let message = "User's phone: " + userPhone;
-
 document.write(message);
+}
 
 console.log(userPhone);
 
@@ -23,3 +28,4 @@ if (userPhone == "Red Magic" || userPhone == "red magic") {
   } else {
     document.write(" Good evening");
   }
+
