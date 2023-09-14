@@ -15,17 +15,6 @@ function displayUserPhone(){
     document.write(message);
     }
 
-function displayGreeting(){
-  const currentTime = new Date().getHours();
-  if (currentTime < 12) {
-    document.write(" Good morning!");
-  } else if (currentTime < 18) {
-    document.write(" Good afternoon!");
-  } else {
-    document.write(" Good evening");
-  }
-}
-
 function askTime() {
     let isValid = false;
     let message;
