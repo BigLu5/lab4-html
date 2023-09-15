@@ -41,10 +41,14 @@ function askTime() {
 }
 
 function getRating() {
-let rating = prompt('Rate my site between 1-5', '5');
-    
+    let rating = prompt('Rate my site between 1-5', '5');
+
+    while (!(rating >= 1 && rating <= 5)) {
+        rating = prompt('Please enter a number between 1 and 5!')
+    } 
+
     for (let i = 0; i < rating; i++) {
-    document.write("<img src='star.png'/>")
+        document.write("<img src='star.png'/>")
     }
-    }
+}
 
